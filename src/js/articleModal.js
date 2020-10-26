@@ -37,6 +37,7 @@ span.onclick = function() {
     articlemodal.style.display = "none";
     }
 
+// deixar display none como padrão
 window.onclick = function(event) {
     if (event.target == articlemodal) {
         articlemodal.style.display = "none";
@@ -45,113 +46,142 @@ window.onclick = function(event) {
 
 /*MODAL 2*/
 
-btn1.onclick = function() {
-    articlemodal1.style.display = "block";
+
+var btns = [btn1, btn2, btn3, btn4, btn5, btn6, btn7];
+var articles = [articlemodal1, articlemodal2, articlemodal3, articlemodal4, articlemodal5, articlemodal6, articlemodal7];
+var spans = [span1, span2, span3, span4, span5, span6, span7];
+
+function setStyles1(){
+    for(var i=0; i <= btns.length; i++){
+        btns[i].onClick = () => {
+            articles[i].style.display = "block"
+        }
+
+        window.onclick = function(event) {
+            if (event.target == articles[i]) {
+                articles[i].style.display = "none";
+                }
+            }
+        
     }
 
-span1.onclick = function() {
-    articlemodal1.style.display = "none";
-    }
-
-window.onclick = function(event) {
-    if (event.target == articlemodal1) {
-        articlemodal1.style.display = "none";
+    for(var i=0; i <= spans.length; i++){
+        spans[i].onClick = () => {
+            articles[i].style.display = "none"
         }
     }
+}
+
+setStyles1();
+
+
+// btn1.onclick = function() {
+//     articlemodal1.style.display = "block";
+//     }
+
+// span1.onclick = function() {
+//     articlemodal1.style.display = "none";
+//     }
+
+// window.onclick = function(event) {
+//     if (event.target == articlemodal1) {
+//         articlemodal1.style.display = "none";
+//         }
+//     }
 
 /*MODAL 3*/
 
-btn2.onclick = function() {
-    articlemodal2.style.display = "block";
-    }
+// btn2.onclick = function() {
+//     articlemodal2.style.display = "block";
+//     }
 
-span2.onclick = function() {
-    articlemodal2.style.display = "none";
-    }
+// span2.onclick = function() {
+//     articlemodal2.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal2) {
-        articlemodal2.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal2) {
+//         articlemodal2.style.display = "none";
+//         }
+//     }
 
 /*MODAL 4*/
 
-btn3.onclick = function() {
-    articlemodal3.style.display = "block";
-    }
+// btn3.onclick = function() {
+//     articlemodal3.style.display = "block";
+//     }
 
-span3.onclick = function() {
-    articlemodal3.style.display = "none";
-    }
+// span3.onclick = function() {
+//     articlemodal3.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal3) {
-        articlemodal3.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal3) {
+//         articlemodal3.style.display = "none";
+//         }
+//     }
 
 /*MODAL 5*/
 
-btn4.onclick = function() {
-    articlemodal4.style.display = "block";
-    }
+// btn4.onclick = function() {
+//     articlemodal4.style.display = "block";
+//     }
 
-span4.onclick = function() {
-    articlemodal4.style.display = "none";
-    }
+// span4.onclick = function() {
+//     articlemodal4.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal4) {
-        articlemodal4.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal4) {
+//         articlemodal4.style.display = "none";
+//         }
+//     }
 
 /*MODAL 6*/
 
-btn5.onclick = function() {
-    articlemodal5.style.display = "block";
-    }
+// btn5.onclick = function() {
+//     articlemodal5.style.display = "block";
+//     }
 
-span5.onclick = function() {
-    articlemodal5.style.display = "none";
-    }
+// span5.onclick = function() {
+//     articlemodal5.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal5) {
-        articlemodal5.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal5) {
+//         articlemodal5.style.display = "none";
+//         }
+//     }
 
 /*MODAL 7*/
 
-btn6.onclick = function() {
-    articlemodal6.style.display = "block";
-    }
+// btn6.onclick = function() {
+//     articlemodal6.style.display = "block";
+//     }
 
-span6.onclick = function() {
-    articlemodal6.style.display = "none";
-    }
+// span6.onclick = function() {
+//     articlemodal6.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal6) {
-        articlemodal6.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal6) {
+//         articlemodal6.style.display = "none";
+//         }
+//     }
 
 
 /*MODAL 8*/
 
-btn7.onclick = function() {
-    articlemodal7.style.display = "block";
-    }
+// btn7.onclick = function() {
+//     articlemodal7.style.display = "block";
+//     }
 
-span7.onclick = function() {
-    articlemodal7.style.display = "none";
-    }
+// span7.onclick = function() {
+//     articlemodal7.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal7) {
-        articlemodal7.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal7) {
+//         articlemodal7.style.display = "none";
+//         }
+//     }

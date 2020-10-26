@@ -18,41 +18,55 @@ var modalImg = document.getElementById("img01");
 
 var captionText = document.getElementById("caption");
 
-img.onclick = function() {
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+var imgs = [img, img1, img2, img3, img4, img5];
+
+function setStyle6(){
+    for(var i=0; i<=imgs.length; i++){
+        imgs[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+    }
 }
 
-img1.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+setStyle6();
 
-img2.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// img.onclick = function() {
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
 
-img3.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// img1.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
 
-img4.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// img2.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
 
-img5.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
+// img3.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
+
+// img4.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
+
+// img5.onclick = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// }
 
     
 // When the user clicks on <span> (x), close the modal

@@ -29,129 +29,156 @@ var span13 = document.getElementsByClassName("article-close13")[0];
 var span14 = document.getElementsByClassName("article-close14")[0];
 var span15 = document.getElementsByClassName("article-close15")[0];
 
-btn8.onclick = function() {
-    articlemodal8.style.display = "block";
+var btns = [btn8, btn9, btn10, btn11, btn12, btn13, btn14, btn15];
+var articles = [articlemodal8, articlemodal9, articlemodal10, articlemodal11, articlemodal12, articlemodal13, articlemodal14, articlemodal15];
+var spans = [span8, span9, span10, span11, span12, span13, span14, span15];
+
+function setStyles2(){
+    for(var i=0; i <= btns.length; i++){
+        btns[i].onClick = () => {
+            articles[i].style.display = "block"
+        }
+
+        window.onclick = function(event) {
+            if (event.target == articles[i]) {
+                articles[i].style.display = "none";
+                }
+            }
+        
     }
 
-span8.onclick = function() {
-    articlemodal8.style.display = "none";
-    }
-
-window.onclick = function(event) {
-    if (event.target == articlemodal8) {
-        articlemodal8.style.display = "none";
+    for(var i=0; i <= spans.length; i++){
+        spans[i].onClick = () => {
+            articles[i].style.display = "none"
         }
     }
+}
+
+setStyles2();
+
+// btn8.onclick = function() {
+//     articlemodal8.style.display = "block";
+//     }
+
+// span8.onclick = function() {
+//     articlemodal8.style.display = "none";
+//     }
+
+// window.onclick = function(event) {
+//     if (event.target == articlemodal8) {
+//         articlemodal8.style.display = "none";
+//         }
+//     }
 
 /*MODAL 2*/
 
-btn9.onclick = function() {
-    articlemodal9.style.display = "block";
-    }
+// btn9.onclick = function() {
+//     articlemodal9.style.display = "block";
+//     }
 
-span9.onclick = function() {
-    articlemodal9.style.display = "none";
-    }
+// span9.onclick = function() {
+//     articlemodal9.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal9) {
-        articlemodal9.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal9) {
+//         articlemodal9.style.display = "none";
+//         }
+//     }
 
 /*MODAL 3*/
 
-btn10.onclick = function() {
-    articlemodal10.style.display = "block";
-    }
+// btn10.onclick = function() {
+//     articlemodal10.style.display = "block";
+//     }
 
-span10.onclick = function() {
-    articlemodal10.style.display = "none";
-    }
+// span10.onclick = function() {
+//     articlemodal10.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal10) {
-        articlemodal10.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal10) {
+//         articlemodal10.style.display = "none";
+//         }
+//     }
 
 /*MODAL 4*/
 
-btn11.onclick = function() {
-    articlemodal11.style.display = "block";
-    }
+// btn11.onclick = function() {
+//     articlemodal11.style.display = "block";
+//     }
 
-span11.onclick = function() {
-    articlemodal11.style.display = "none";
-    }
+// span11.onclick = function() {
+//     articlemodal11.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal11) {
-        articlemodal11.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal11) {
+//         articlemodal11.style.display = "none";
+//         }
+//     }
 
 /*MODAL 5*/
 
-btn12.onclick = function() {
-    articlemodal12.style.display = "block";
-    }
+// btn12.onclick = function() {
+//     articlemodal12.style.display = "block";
+//     }
 
-span12.onclick = function() {
-    articlemodal12.style.display = "none";
-    }
+// span12.onclick = function() {
+//     articlemodal12.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal12) {
-        articlemodal12.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal12) {
+//         articlemodal12.style.display = "none";
+//         }
+//     }
 
 /*MODAL 6*/
 
-btn13.onclick = function() {
-    articlemodal13.style.display = "block";
-    }
+// btn13.onclick = function() {
+//     articlemodal13.style.display = "block";
+//     }
 
-span13.onclick = function() {
-    articlemodal13.style.display = "none";
-    }
+// span13.onclick = function() {
+//     articlemodal13.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal13) {
-        articlemodal13.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal13) {
+//         articlemodal13.style.display = "none";
+//         }
+//     }
 
 /*MODAL 7*/
 
-btn14.onclick = function() {
-    articlemodal14.style.display = "block";
-    }
+// btn14.onclick = function() {
+//     articlemodal14.style.display = "block";
+//     }
 
-span14.onclick = function() {
-    articlemodal14.style.display = "none";
-    }
+// span14.onclick = function() {
+//     articlemodal14.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal14) {
-        articlemodal14.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal14) {
+//         articlemodal14.style.display = "none";
+//         }
+//     }
 
 
 /*MODAL 8*/
 
-btn15.onclick = function() {
-    articlemodal15.style.display = "block";
-    }
+// btn15.onclick = function() {
+//     articlemodal15.style.display = "block";
+//     }
 
-span15.onclick = function() {
-    articlemodal15.style.display = "none";
-    }
+// span15.onclick = function() {
+//     articlemodal15.style.display = "none";
+//     }
 
-window.onclick = function(event) {
-    if (event.target == articlemodal15) {
-        articlemodal15.style.display = "none";
-        }
-    }
+// window.onclick = function(event) {
+//     if (event.target == articlemodal15) {
+//         articlemodal15.style.display = "none";
+//         }
+//     }
