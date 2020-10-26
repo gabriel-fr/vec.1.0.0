@@ -1,0 +1,53 @@
+.about-logo {
+  margin-bottom: 20px;
+  margin-top: 60px;
+  color: #ff523b; }
+  .about-logo h3 {
+    font-size: 35px; }
+
+.about-text h1 {
+  color: #203f51; }
+
+.card-container {
+  padding-left: 43%; }
+  .card-container h3 {
+    color: #ff523b; }
+
+.right-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+  padding: 40px 50px;
+  height: 320px; }
+  .right-cards img {
+    border-radius: 5px 5px 0 0; }
+
+.right-cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.about-text {
+  font-size: 16px; }
+
+.team-container {
+  max-width: 1300px;
+  margin: auto; }
+  .team-container h3 {
+    color: #203f51; }
+
+.team-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 90%; }
+
+.force {
+  height: 276px; }
+
+@media only screen and (max-width: 600px) {
+  .row {
+    text-align: center; }
+  .col-2, .col-3, .col-4 {
+    flex-basis: 100%; }
+  .card-container {
+    padding-left: 10%;
+    margin-right: 20px; }
+    .card-container p {
+      font-size: 12px; } }
