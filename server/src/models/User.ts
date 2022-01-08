@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, OneToOne, OneToMany, JoinColumn } from 'typeorm';
 import { Profile } from './Profile';
 import { Album } from "./Album";
+import { Article } from './Article';
 
 @Entity()
 export class User {
@@ -20,5 +21,8 @@ export class User {
 
   @OneToMany(() => Album, album => album.user)
   albuns: Album[];
+
+  @OneToMany(() => Article, article => article.user)
+  articles: Article[];
 
 }
