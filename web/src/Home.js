@@ -1,9 +1,9 @@
-import { Header } from "./components/styles";
+import Header from "./components/Header";
 
 function Home() {
   return (
     <>
-      <Header>Vivendo em Cristo</Header>
+      <Header />
     </>
   );
 }
