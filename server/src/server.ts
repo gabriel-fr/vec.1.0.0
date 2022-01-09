@@ -2,6 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import "reflect-metadata";
 
+import './database/connection';
+
 const app = express();
 
 app.use(cors());
