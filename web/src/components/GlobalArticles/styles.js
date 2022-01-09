@@ -23,5 +23,5 @@ export const ArticlesContainer = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 `;

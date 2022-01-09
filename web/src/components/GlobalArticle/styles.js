@@ -11,6 +11,17 @@ export const ArticleContainer = styled.div`
 `;
 
 export const ArticleDescription = styled.div`
+  margin: 5px;
   border-style: solid;
   border-width: 0px 2px 0px 0px;
+`;
+
+export const RedirectLink = styled.a`
+  text-decoration: none;
+  color: #333;
+  width: 370px;
+`;
+
+export const TextDescription = styled.a`
+  padding: 5px 5px 0px 0px;
 `;
