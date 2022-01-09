@@ -1,11 +1,9 @@
 import { Request, Response } from 'express';
 import { getRepository } from 'typeorm';
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 import * as Yup from 'yup';
 
 import { salt } from '../config/credentials';
-import { JWTSecretUser } from '../config/credentials';
 
 import { User } from '../models/User';
 import userView from '../views/user_view';
@@ -126,6 +124,33 @@ export default {
         return response.status(404).json({ "Erro": "Nenhum cliente com este Email" });
       }else{
         await usersRepository.remove(existUser);
+      }
+    }catch(err){
+      return response.status(400).json({ "Erro" : err });
+    }
+  },
+
+  async edit(request: Request, response: Response) {
+    try{
+      const { email } = request.params;
+      var {
+        profile
+      } = request.body;
+
+      const usersRepository = getRepository(User);
+
+      const existUser = await usersRepository.findOne({
+        where: {
+          email: email
+        }
+      });
+
+      if(existUser === undefined){
+        return response.status(404).json({ "Erro" : 'Nenhum Usuário com Este Email' });
+      }else{
+        existUser.profile = profile;
+        await usersRepository.save(existUser);
+        return response.status(200).json(existUser);
       }
     }catch(err){
       return response.status(400).json({ "Erro" : err });
