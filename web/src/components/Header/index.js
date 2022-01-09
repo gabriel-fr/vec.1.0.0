@@ -1,23 +1,33 @@
-import React from "react";
-import { HeaderContainer, TitleContainer, Title, ColumnsContainer } from "./styles";
+import React, { useState } from "react";
+import {
+  HeaderContainer,
+  TitleContainer,
+  Title,
+  ColumnsContainer,
+  BackgroundImage,
+} from "./styles";
 import TextContainer from "../TextContainer";
 
 const Header = () => {
-  return (
-    <HeaderContainer>
-      <TitleContainer>
-        <Title>Vivendo em Cristo </Title>
+  const [textDetail, setTextDetail] = useState("Texto exemplo de um destaque");
 
-        <ColumnsContainer>
-          <div style={{ width: "50%" }}>
-            <TextContainer title="Destaque" variant="white" />
-          </div>
-          <div style={{ width: "50%" }}>
-            <TextContainer title="Sobre" variant="red" />
-          </div>
-        </ColumnsContainer>
-      </TitleContainer>
-    </HeaderContainer>
+  return (
+    <BackgroundImage>
+      <HeaderContainer>
+        <TitleContainer>
+          <Title>Vivendo em Cristo </Title>
+
+          <ColumnsContainer>
+            <div style={{ width: "40%" }}>
+              <TextContainer title="Destaque" variant="white" text={textDetail} />
+            </div>
+            <div style={{ width: "50%" }}>
+              <TextContainer title="Sobre" variant="red" height="250px" />
+            </div>
+          </ColumnsContainer>
+        </TitleContainer>
+      </HeaderContainer>
+    </BackgroundImage>
   );
 };
 
