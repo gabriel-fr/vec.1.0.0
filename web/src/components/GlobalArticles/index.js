@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Title, ArticlesContainer } from "./styles";
 import GlobalArticle from "../GlobalArticle";
-import ProjetoAmor from "../../assets/PA.jpg";
 
 const GlobalArticles = () => {
   const [globalArticle, setGlobalArticle] = useState({
-    photo: ProjetoAmor,
-    title: "Participe do Projeto Amor",
+    photo: "https://i.ibb.co/mz8R02z/Whats-App-Image-2022-01-09-at-14-49-58.jpg",
+    title: "Participe do Projeto Amor!",
     description:
       "Projeto Amor acontece toda sexta feira em conjunto com a igreja Brasa na Zona sul e Centro de Porto alegre",
     redirectLink: "https://www.instagram.com/p/CQ8r_mAhJml/",
