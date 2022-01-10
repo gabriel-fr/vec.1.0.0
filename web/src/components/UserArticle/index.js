@@ -1,8 +1,16 @@
 import React from "react";
-import { UserArticleContainer, UserProfile, UserPhoto, UserDescription, UserName } from "./styles";
-// import AccountBox from "@mui/icons-material/AccountBox";
+import {
+  UserArticleContainer,
+  UserProfile,
+  UserPhoto,
+  UserDescription,
+  UserName,
+  ProfileButtons,
+} from "./styles";
+import AccountBox from "@material-ui/icons/AccountBox";
+import BookIcon from "@material-ui/icons/Book";
 
-const UserArticle = (props) => {
+const UserArticle = () => {
   return (
     <div>
       <UserArticleContainer>
@@ -24,7 +32,16 @@ const UserArticle = (props) => {
             </UserDescription>
           </div>
         </UserProfile>
-        <UserProfile>{/* <AccountBox /> */}</UserProfile>
+        <UserProfile>
+          <ProfileButtons>
+            <a href="/profile" title="Perfil" target="_blank" style={{ margin: 10 }}>
+              <AccountBox style={{ color: "white", width: 50, height: 50 }} />
+            </a>
+            <a href="/" title="Leitura Preferida">
+              <BookIcon style={{ color: "white", width: 50, height: 47 }} />
+            </a>
+          </ProfileButtons>
+        </UserProfile>
       </UserArticleContainer>
     </div>
   );

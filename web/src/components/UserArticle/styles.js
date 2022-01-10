@@ -34,3 +34,10 @@ export const UserName = styled.div`
   font-size: 25px;
   font-weight: bold;
 `;
+
+export const ProfileButtons = styled.div`
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 7px;
+  transition: 0.3s;
+`;

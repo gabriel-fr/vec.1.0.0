@@ -25,3 +25,9 @@ export const RedirectLink = styled.a`
 export const TextDescription = styled.a`
   padding: 5px 5px 0px 0px;
 `;
+
+export const ArticleImage = styled.img`
+  max-width: 100%;
+  object-fit: fill;
+  height: 500px;
+`;
