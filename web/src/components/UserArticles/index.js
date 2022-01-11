@@ -28,8 +28,8 @@ const UserArticles = () => {
       infinite={true}
       autoPlaySpeed={1000}
       keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
+      // transitionDuration={500}
+      // customTransition="all .5"
       //   autoPlay={this.props.deviceType !== "mobile" ? true : false}
       //   containerClass="carousel-container"
       //   removeArrowOnDeviceType={["tablet", "mobile"]}

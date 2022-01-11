@@ -9,6 +9,7 @@ import {
 } from "./styles";
 import AccountBox from "@material-ui/icons/AccountBox";
 import BookIcon from "@material-ui/icons/Book";
+import PersonalArticles from "../PersonalArticles";
 
 const UserArticle = () => {
   return (
@@ -42,6 +43,7 @@ const UserArticle = () => {
             </a>
           </ProfileButtons>
         </UserProfile>
+        <PersonalArticles />
       </UserArticleContainer>
     </div>
   );

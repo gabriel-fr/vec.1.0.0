@@ -5,6 +5,7 @@ export const UserArticleContainer = styled.div`
   display: inline-block;
   background-color: #333;
   height: 454px;
+  /* margin: 0px 80px 0px 80px; */
 `;
 
 export const UserProfile = styled.div`
