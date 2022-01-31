@@ -13,7 +13,7 @@ import PersonalArticles from "../PersonalArticles";
 
 const UserArticle = () => {
   return (
-    <div>
+    <div style={{ paddingBottom: "150px" }}>
       <UserArticleContainer>
         <UserProfile>
           <div>

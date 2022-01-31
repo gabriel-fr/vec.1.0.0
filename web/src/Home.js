@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import GlobalArticles from "./components/GlobalArticles";
 import UserArticles from "./components/UserArticles";
+import AboutContainer from "./components/AboutContainer";
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Header />
       <GlobalArticles />
       <UserArticles />
+      <AboutContainer />
     </>
   );
 }
