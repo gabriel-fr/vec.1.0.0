@@ -3,7 +3,7 @@ import { getRepository } from 'typeorm';
 import bcrypt from 'bcrypt';
 import * as Yup from 'yup';
 
-import { salt } from '../config/credentials';
+import { salt } from '../config/credentials.example';
 
 import { User } from '../models/User';
 import userView from '../views/user_view';
