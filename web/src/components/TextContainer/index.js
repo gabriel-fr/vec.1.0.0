@@ -10,11 +10,11 @@ const TextContainer = ({ title, variant, height, text }) => {
           {text
             ? text
             : "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
-              "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
-              "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
-              "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
-              "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
-              "Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante"}
+              " Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
+              " Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
+              " Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
+              " Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante" +
+              " Mussum Ipsum, cacilds vidis litro abertis. Posuere libero varius. Nullam a nisl ut ante"}
         </p>
       </TextHeaderContainer>
     </>
