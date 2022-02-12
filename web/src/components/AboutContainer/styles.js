@@ -32,6 +32,10 @@ export const AboutLinks = styled.ul`
   list-style-type: none;
   padding-bottom: 14px;
 
+  a {
+    text-decoration: none;
+  }
+
   li {
     color: #fff;
     padding-right: 25px;

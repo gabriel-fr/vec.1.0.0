@@ -8,7 +8,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const SocialMidiasContainer = () => {
   return (
-    <div>
+    <div style={{ paddingBottom: 80 }}>
       <div style={{ padding: "70px 0" }}>
         <SmallContainer>
           <RowContainer>

@@ -3,6 +3,7 @@ import GlobalArticles from "./components/GlobalArticles";
 import UserArticles from "./components/UserArticles";
 import AboutContainer from "./components/AboutContainer";
 import SocialMidiasContainer from "./components/SocialMidiasContainer";
+import Footer from "./components/Footer";
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <UserArticles />
       <AboutContainer />
       <SocialMidiasContainer />
+      <Footer />
     </>
   );
 }

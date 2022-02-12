@@ -8,7 +8,7 @@ export const UserArticleContainer = styled.div`
   /* margin: 0px 80px 0px 80px; */
 `;
 
-export const UserProfile = styled.div`
+export const RowStyle = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
