@@ -37,9 +37,49 @@ const Footer = () => {
               </a>
             </AboutLinks>
           </ColumnStyle>
+          <ColumnStyle>
+            <div>
+              <h3>Agradecimentos</h3>
+              <p>
+                Obrigado para os envolvidos neste projeto, pelo máximo esforço e paciencia, e a
+                Jesus Cristo o Salvador, obrigado e louvor, porque esta é a vontade do Criador em
+                seu Cristo. Pai, eu escolho não me preocupar com o que vejo e declaro e que a paz
+                governe em meu coração; <br /> <br />
+                Bem-aventurados os que não viram e ainda creram <br /> João 20:29 <br /> <br />
+                Rei dos reis e Senhor dos senhores <br /> 1 Timóteo 1:17
+              </p>
+            </div>
+          </ColumnStyle>
+          <ColumnStyle>
+            <AboutLinks>
+              <a
+                href="https://www.abiblia.org/ver.php?id=3546"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>Biblepédia</li>
+              </a>
+              <a
+                href="https://www.livrariadacomunidade.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>Produtos</li>
+              </a>
+              <a
+                href="https://www.igrejaemportoalegre.com.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <li>Parceiros</li>
+              </a>
+            </AboutLinks>
+          </ColumnStyle>
         </RowStyle>
         <hr />
-        <p>Termos e Condições</p>
+        <div style={{ textAlign: "center" }}>
+          <p>Termos e Condições - 2022</p>
+        </div>
       </Container>
     </FooterContainer>
   );
