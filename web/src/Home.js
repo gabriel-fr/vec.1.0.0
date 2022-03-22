@@ -1,9 +1,9 @@
-import Header from "./components/Header";
-import GlobalArticles from "./components/GlobalArticles";
-import UserArticles from "./components/UserArticles";
-import AboutContainer from "./components/AboutContainer";
-import SocialMidiasContainer from "./components/SocialMidiasContainer";
-import Footer from "./components/Footer";
+import Header from "./components/Home/Header";
+import GlobalArticles from "./components/Home/GlobalArticles";
+import UserArticles from "./components/Home/UserArticles";
+import AboutContainer from "./components/Home/AboutContainer";
+import SocialMidiasContainer from "./components/Home/SocialMidiasContainer";
+import Footer from "./components/Home/Footer";
 
 function Home() {
   return (
